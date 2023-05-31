@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: delivery-service
+  data:
+    mongodb:
+      uri: mongodb+srv://ase:team11@ase-delivery-shared-db.unatfkw.mongodb.net/?retryWrites=true&w=majority
+      database: ase_delivery
+      auto-index-creation: true
+      repositories:
+        enabled: true
+      field-naming-strategy: org.springframework.data.mapping.model.SnakeCaseFieldNamingStrategy
+  mail:
+    protocol: smtp
+    host: smtp.gmail.com
+    port: 587
+    username: wanzhu98@gmail.com
+    password: azcscyeafbvrajeh
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: ${PORT:8080}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
+
+
+
+
+
+
+

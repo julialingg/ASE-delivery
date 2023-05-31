@@ -1,0 +1,12 @@
+[
+  {
+    "id": 659902359786,
+    "role": "customer",
+    "email": "customer@gmail.com"
+  },
+  {
+    "id": 726616093060,
+    "role": "deliverer",
+    "email": "deliverer1@gmail.com"
+  }
+]
